@@ -1,0 +1,31 @@
+@use '../utils/shared' as *;
+
+.service-card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  // user-select: none;
+  img {
+    margin-bottom: 4rem;
+    max-width: 8rem;
+    min-height: 8rem;
+  }
+  .service-card__text-container {
+    color: $font-dark;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    h3 {
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    p {
+      font-weight: 400;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
