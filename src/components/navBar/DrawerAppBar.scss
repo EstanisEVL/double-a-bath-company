@@ -1,0 +1,11 @@
+.navBar{
+    background-color: #252525 !important;
+    .logo{
+        max-width: clamp(130px, 5vw, 186px);
+    }
+    .navItem{
+        font-size: clamp(10px, 1vw, 14px);
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
