@@ -3,8 +3,7 @@ import { AppBar, Button, CssBaseline, Divider, Drawer, IconButton, Link, List, L
 import { Box } from '@mui/system';
 import MenuIcon from '@mui/icons-material/Menu';
 import PropTypes from 'prop-types';
-import logo from './logo.png';
-import './DrawerAppBar.scss';
+import logo from '../../assets/img/logo.png';
 
 const drawerWidth = 240;
 const navItems = ['HOME', 'OUR SERVICE', 'OUR WORK', 'TESTIMONIALS'];
