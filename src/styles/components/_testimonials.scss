@@ -1,0 +1,103 @@
+@use '../utils/shared' as *;
+
+@media only screen and (max-width: 899px) {
+  .testimonials-section--container {
+    background-color: $bg-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    min-height: 60vh;
+    h2 {
+      color: $primary-color-dark;
+      font-family: 'Montserrat';
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 4.4rem;
+      margin-bottom: 5rem;
+      text-transform: uppercase;
+    }
+    .testimony-slider--container {
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .testimony-slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+      }
+      .ellipse-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin: 4rem 0;
+        .ellipse {
+          background: $footer-btn-hover;
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+        }
+        .active {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .testimonials-section--container {
+    background-color: $bg-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    min-height: 60vh;
+    h2 {
+      color: $primary-color-dark;
+      font-family: 'Montserrat';
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 4.4rem;
+      margin-bottom: 10rem;
+      text-transform: uppercase;
+    }
+    .testimony-slider--container {
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .testimony-slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+      }
+      .ellipse-container {
+        display: flex;
+        gap: 3rem;
+        margin: 4rem 0;
+        .ellipse {
+          background: $footer-btn-hover;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+        }
+        .active {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
