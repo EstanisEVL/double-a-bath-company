@@ -8,7 +8,7 @@ const CardList = [
   {
     id: 1,
     img: cardIcon1,
-    title: 'Free design service',
+    title: 'Design consultancy',
     description: 'Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
   },
   {

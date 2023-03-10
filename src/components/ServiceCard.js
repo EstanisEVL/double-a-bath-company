@@ -1,6 +1,8 @@
 /*---- Imported list ----*/
 // import CardList from './CardList';
 
+// DESTRUCTURAR
+
 const ServiceCard = (props) => {
   return(
     <div className='service-card__container'>

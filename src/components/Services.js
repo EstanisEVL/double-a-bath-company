@@ -11,9 +11,9 @@ const Services = () => {
   const [ cards, setCards ] = useState(CardList);
 
   return(
-    <section className='services-section__container'>
+    <section className='services-section--container'>
       <h2>our services</h2>
-      <div className='services-section__card-container'>
+      <div className='services-section--card-container'>
         {
           cards.map((card, index) => {
             return(

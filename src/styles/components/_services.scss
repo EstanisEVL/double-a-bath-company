@@ -1,6 +1,6 @@
 @use '../utils/shared' as *;
 
-.services-section__container {
+.services-section--container {
   background-image: url('../../assets/img/wave-background.png');
   background-size: contain;
   background-position: bottom;
@@ -20,7 +20,7 @@
     text-align: center;
     text-transform: uppercase;
   }
-  .services-section__card-container {
+  .services-section--card-container {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));

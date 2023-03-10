@@ -1,0 +1,127 @@
+@use '../utils/shared' as *;
+
+@media only screen and (max-width: 899px) {
+  .slider-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    .testimony-container {
+      background-color: $primary-color-light;
+      border-radius: 5rem;
+      padding: 4em;
+      display: flex;
+      flex-direction: column;
+      .testimony--profile-picture {
+        max-width: 100%;
+        max-height: 100%;
+        align-self: center;
+      }
+      .testimony-container--txt {
+        color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0;
+        .front-quotation {
+          width: 10vw;
+          align-self: flex-start;
+          margin-bottom: 2em;
+        }
+        .testimony--p {
+          font-family: 'Montserrat';
+          font-size: 4vw;
+          font-style: italic;
+          font-weight: 500;
+          line-height: 3.4rem;
+          text-align: center;
+        }
+    
+        .testimony--name {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          align-self: flex-end;
+          margin-top: 3em;
+          p {
+            font-family: 'Montserrat';
+            font-size: 5vw;
+            font-weight: 700;
+            line-height: 3.4rem;
+          }
+          .back-quotation {
+            width: 10vw;
+            margin-top: 2em;
+          }
+        }
+      }
+    }
+  }
+  .active {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .slider-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    min-height: 50rem;
+    display: flex;
+    .testimony-container {
+      background-color: $primary-color-light;
+      border-radius: 5rem;
+      display: flex;
+      align-items: center;
+      margin: 0 2rem;
+      max-width: 110rem;
+      .testimony--profile-picture {
+        margin: 4rem 2rem 4rem 4rem;
+        max-width: auto;
+        max-height: 356px;
+      }
+      .testimony-container--txt {
+        color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 4rem 4rem 2rem;
+        .front-quotation {
+          max-width: 8vw;
+          align-self: flex-start;
+          margin-bottom: 3em;
+        }
+        .testimony--p {
+          max-width: 80%;
+          font-family: 'Montserrat';
+          font-size: max(2.4rem);
+          font-style: italic;
+          font-weight: 500;
+          line-height: 34px;
+        }
+    
+        .testimony--name {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          align-self: flex-end;
+          margin-top: 3em;
+          p {
+            font-family: 'Montserrat';
+            font-size: clamp(1.4rem, 1.5vw, 2.8rem);
+            font-weight: 700;
+            line-height: 34px;
+          }
+          .back-quotation {
+            max-width: 8vw;
+            margin-left: 4em;
+          }
+        }
+      }
+    }
+  }
+  .active {
+    opacity: 1;
+  }
+}

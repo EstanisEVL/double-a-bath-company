@@ -1,5 +1,6 @@
 // Imported components:
 import Services from './components/Services';
+import Testimonials from './components/Testimonials';
 
 // Imported styles:
 import './styles/styles.scss';
@@ -10,6 +11,7 @@ function App() {
       {/* NavBar */}
       {/* HeroSection */}
       <Services />
+      <Testimonials />
     </div>
   );
 };
