@@ -1,6 +1,6 @@
 /*---- Imported icons ----*/
-import frontQuotations from '../assets/img/front-quotations.png';
-import backQuotations from '../assets/img/back-quotations.png';
+import frontQuotations from '../../assets/img/front-quotations.png';
+import backQuotations from '../../assets/img/back-quotations.png';
 
 const Testimony = ({ slide }) => {
   return(

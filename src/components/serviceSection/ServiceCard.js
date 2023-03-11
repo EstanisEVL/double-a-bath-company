@@ -1,19 +1,14 @@
-/*---- Imported list ----*/
-// import CardList from './CardList';
-
-// DESTRUCTURAR
-
-const ServiceCard = (props) => {
+const ServiceCard = ({ img, title, description }) => {
   return(
     <div className='service-card__container'>
       <img 
-      src={ props.img } />
+      src={ img } />
       <div className='service-card__text-container'>
         <h3>
-          { props.title }
+          { title }
         </h3>
         <p>
-          { props.description }
+          { description }
         </p>
       </div>
     </div>
