@@ -1,7 +1,7 @@
 /*---- Import uuid: ----*/
 import { v4 as uuidv4 } from 'uuid';
 
-/*---- Image imports ----*/
+/*---- Imported images ----*/
 import testimonialImg1 from '../../assets/img/testimonial1-profile-pic.png';
 import testimonialImg2 from '../../assets/img/testimonial2-profile-pic.png';
 import testimonialImg3 from '../../assets/img/testimonial3-profile-pic.png';

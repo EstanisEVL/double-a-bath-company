@@ -1,0 +1,48 @@
+@use '../utils/shared' as *;
+
+.cd-image--container {
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+  .cd-resize-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: auto;
+      max-width: none;
+    }
+    .cd-image-label {
+      right: auto;
+      left: 0;
+    }
+  }
+}
+
+.is-visible {
+  .cd-resize-img {
+  width: 50%;
+  animation: cd-bounce-in 0.7s;
+  }
+}  
+
+@keyframes cd-bounce-in {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 55%;
+  }
+  100% {
+    width: 50%;
+  }
+}
