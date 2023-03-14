@@ -1,18 +1,17 @@
 @use '../utils/shared' as *;
 
-.service-card__container {
+.service-card--container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   transition: all 0.3s ease;
-  // user-select: none;
   img {
     margin-bottom: 4rem;
     max-width: 8rem;
     min-height: 8rem;
   }
-  .service-card__text-container {
+  .service-card--text-container {
     color: $font-dark;
     font-size: 1.4rem;
     line-height: 1.6rem;
@@ -22,6 +21,7 @@
       text-transform: uppercase;
     }
     p {
+      max-width: 28.5rem;
       font-weight: 400;
     }
   }

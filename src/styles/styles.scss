@@ -1,13 +1,20 @@
-/*---- Base imports ----*/
+/*---- Base ----*/
 @import './base/reset';
 @import './base/typo';
+
+/*---- Animation ----*/
+@import './animations/lazyLoad';
 
 /*---- Components ----*/
 @import './components/drawerAppBar';
 @import './components/heroSec';
+@import './components/spinner';
 @import './components/services';
 @import './components/serviceCard';
+@import './components/work';
+
 @import './components/testimonials';
 @import './components/testimony';
 
+@import './components/floatingWhatsapp';
 @import './components/footer';

@@ -9,12 +9,13 @@ const Footer = () => {
     <footer className='footer-container'>
       
       <div className='footer--contact-container'>
-        <div>
+        <a href='/'>
           <img
+          className='footer--brand-img'
           src={ logo } 
           alt='brand logo'
           />
-        </div>
+        </a>
         <div className='footer--consultation-txt'>
           <p>Free consultation</p>
         </div>
@@ -30,7 +31,7 @@ const Footer = () => {
         <div className='footer--address'>
           <p>Miami, Miramar, Ft. Lauderdale, Florida</p>
         </div>
-        <div>
+        <div className='footer--copyright'>
           <p>© Double Abath company. All Rights Reserved 2023</p>
         </div>
       </div>

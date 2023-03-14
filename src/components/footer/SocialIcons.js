@@ -5,10 +5,9 @@ const SocialIcons = ({ icons }) => {
     <div className='footer--socials'>
       {
         icons.map((icon, index) => {
-        return <a href={ icon.url }>
+          return <a key={ icon.id } href={ icon.url }>
           <img
           className='socials--btn'
-          key={ index }
           src={ icon.png } 
           alt= { icon.title}
           />

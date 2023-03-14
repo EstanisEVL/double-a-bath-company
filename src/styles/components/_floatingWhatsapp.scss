@@ -1,0 +1,18 @@
+@use '../utils/shared' as *;
+
+.floating-whatsapp--img-container {
+  background-color: 	#25D366;
+  border-radius: 1rem;
+  bottom: 3rem;
+  box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  max-height: 4.8rem;
+  max-width: 4.8rem;
+  position: fixed;
+  right: 3rem;
+  transition: all 0.3s ease;
+  z-index: 1;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

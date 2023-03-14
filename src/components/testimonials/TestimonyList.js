@@ -19,14 +19,14 @@ const TestimonyList = [
     id: uuidv4(),
     img: testimonialImg2,
     alt: 'client profile picture',
-    testimony: 'Now my bathroom is much more welcoming for the whole family',
+    testimony: 'These guys are great, they remodeled my two bathrooms. They have exceeded our expectations, recommended!',
     name: 'Laura'
   },
   {
     id: uuidv4(),
     img: testimonialImg3,
     alt: 'client profile picture',
-    testimony: 'Our bathroom was old fashioned and dark, now its so pretty it makes you want to use it!',
+    testimony: 'Our bathroom was old fashioned and dark, now it is so pretty it makes you want to use it!',
     name: 'Michael and Kelly'
   },
   {

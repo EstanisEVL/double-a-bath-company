@@ -1,22 +1,16 @@
-import { useState } from 'react';
-
 /*---- Imported list ----*/
 import CardList from "./CardList";
 
-// Imported components:
+/*---- Imported components: ----*/
 import ServiceCard from "./ServiceCard";
 
 const Services = () => {
-
-  // CORREGIR WARNING POR setCards sin usar:
-  const [ cards, setCards ] = useState(CardList);
-
   return(
     <section className='services-section--container'>
       <h2>our services</h2>
       <div className='services-section--card-container'>
         {
-          cards.map((card, index) => {
+          CardList.map((card, index) => {
             return(
               <ServiceCard
                 key={ index }
