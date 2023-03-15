@@ -1,5 +1,5 @@
-import slide1 from "./WorkSlidesList";
-import Slider from "./comparisonSlider/slider/Slider";
+import WorkSlidesList from "./WorkSlidesList";
+import WorkSlider from "./WorkSlider";
 
 const Work = () => {
   return(
@@ -10,7 +10,7 @@ const Work = () => {
       </div>
 
       <div className='work-section--slider-container'>
-        <Slider { ...slide1 } />
+        <WorkSlider slides = { WorkSlidesList } />
       </div>
     </section>
   );

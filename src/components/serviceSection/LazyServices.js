@@ -10,6 +10,7 @@ const Services = lazy(
 
 const LazyServices = () => {
   const  { isNearScreen, fromRef }  = useNearScreen({ 
+    rootMargin: '0px',
     threshold: 0.5 
   });
 

@@ -25,7 +25,6 @@ const useNearScreen = ( settings = {} ) => {
         observer.unobserve(el);
       }
     }
-    
   }, [settings]);
   
   return { fromRef, isNearScreen };

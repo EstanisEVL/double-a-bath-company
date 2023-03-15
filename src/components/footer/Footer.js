@@ -6,8 +6,7 @@ import SocialsIconList from './SocialsIconList';
 
 const Footer = () => {
   return(
-    <footer className='footer-container'>
-      
+    <footer className='footer-container' id='footer' >
       <div className='footer--contact-container'>
         <a href='/'>
           <img
@@ -20,7 +19,7 @@ const Footer = () => {
           <p>Free consultation</p>
         </div>
         <div className='footer--phone'>
-          <p>1-800-123-1234</p>
+          <p>786-384-1030</p>
         </div>
       </div>
 

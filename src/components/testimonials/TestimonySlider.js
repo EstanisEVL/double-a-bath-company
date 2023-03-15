@@ -28,13 +28,16 @@ const TestimonySlider = ({ slides }) => {
   return(
     <div className='testimony-slider--container'>
       <div className='testimony-slider'>
-        <SliderBtn moveSlide={ prevSlide } direction={ 'prev' }/>
+        <SliderBtn moveSlide={ prevSlide } direction={ 'prev' } />
           {
             slides.map((item, index) => {
               return (
                 <div 
                   key={ item.id }
-                  className={ slideIndex === index ? 'slider-container active' : 'slider-container'}>
+                  className={
+                    slideIndex === index ?
+                    'slider-container active' :
+                    'slider-container'}>
                     {slideIndex === index &&  
                       <Testimony
                       index={ index }
@@ -45,7 +48,7 @@ const TestimonySlider = ({ slides }) => {
               )
             })
           }
-        <SliderBtn moveSlide={ nextSlide } direction={ 'next' }/>
+        <SliderBtn moveSlide={ nextSlide } direction={ 'next' } />
       </div>
       <div className='ellipse-container'>
         {Array.from({length: slides.length}).map((item, index) => {

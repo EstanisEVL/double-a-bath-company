@@ -1,12 +1,13 @@
-import prevArrow from '../../assets/svg/prev-arrow.svg';
-import nextArrow from '../../assets/svg/next-arrow.svg';
+import prevArrow from '../../assets/svg/work-prev-arrow.svg';
+import nextArrow from '../../assets/svg/work-next-arrow.svg';
 
 const SliderBtn = ({ moveSlide, direction }) => {
   return(
     <button
       onClick={ moveSlide }
-    >
+      >
       <img
+        className='slider-btn'
         src={ direction === 'prev' ? prevArrow : nextArrow }
         alt={ direction === 'prev' ? 'previous arrow' : 'next arrow' }
       />

@@ -1,7 +1,7 @@
 @use '../utils/shared' as *;
 
 .floating-whatsapp--img-container {
-  background-color: 	#25D366;
+  background-color: 	$whatsapp-btn;
   border-radius: 1rem;
   bottom: 3rem;
   box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
@@ -15,4 +15,8 @@
   &:hover {
     transform: scale(1.1);
   }
+}
+
+.hidden {
+  display: none;
 }
