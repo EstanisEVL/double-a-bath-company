@@ -4,6 +4,7 @@ import HeroSec from './components/hero/HeroSec';
 import LazyServices from './components/serviceSection/LazyServices';
 import LazyWork from './components/work/LazyWork';
 import LazyTestimonials from './components/testimonials/LazyTestimonials';
+import Contact from './components/contact/Contact';
 import FloatingWhatsappButton from './components/floatingWhatsappButton/FloatingWhatsappButton';
 import Footer from './components/footer/Footer';
 
@@ -20,7 +21,7 @@ function App() {
       <LazyWork />
       <LazyTestimonials />
 
-
+      <Contact />
       <FloatingWhatsappButton />
       <Footer />
 		</div>

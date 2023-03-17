@@ -1,0 +1,93 @@
+.container{
+    background-color: #F1F5FF;
+    padding-bottom: 50px;
+}
+.title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #1969B3;
+}
+.conteinerInput{
+    display: flex;
+    gap: 10px;
+    @media only screen and (max-width: 599px) {
+        display: block;
+    }
+}
+.group{
+    flex-basis: 100%;
+}
+.conteInput{
+    display: grid;
+    place-items: center;
+}
+.label{
+    margin-left: 8%;
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    padding: 20PX;
+}
+.labelTa{
+    margin-left: 9%;
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    padding: 20PX;
+}
+.input{
+    border-radius: 10px;
+    height: 50px;
+    width: 80%;
+    resize: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #B4B4B4;
+}
+.inputTa{
+    border-radius: 10px;
+    width: 80%;
+    resize: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #B4B4B4;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.conteBtn{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.btnContact{
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1969B3;
+    cursor: pointer;
+}

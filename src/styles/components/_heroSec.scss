@@ -16,5 +16,11 @@
       font-size: clamp(20px, 4vw, 40px);
       font-family: "Montserrat";
     }
+    .btnHero{
+      font-size: clamp(12px, 2vw, 16px);
+      &:hover{
+        background-color: #3891E3;;
+      }
+    }
   }
 }

@@ -66,7 +66,7 @@ function DrawerAppBar(props) {
 								{item}
 							</Button>
 						))}
-						<Button className='navItem' as={Link} size='small' sx={{ backgroundColor: '#fff', color: '#1969B3' }}>
+						<Button className='navItem btnNav' as={Link} size='small' sx={{ backgroundColor: '#fff', color: '#1969B3' }}>
 							FREE CONSULTATION
 						</Button>
 					</Box>
