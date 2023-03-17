@@ -5,6 +5,7 @@ const SliderBtn = ({ moveSlide, direction }) => {
   return(
     <button
       onClick={ moveSlide }
+      className={ direction === 'prev' ? 'left' : 'right'}
       >
       <img
         className='slider-btn'

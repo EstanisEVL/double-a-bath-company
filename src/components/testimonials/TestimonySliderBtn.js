@@ -1,10 +1,11 @@
 import prevArrow from '../../assets/svg/prev-arrow.svg';
 import nextArrow from '../../assets/svg/next-arrow.svg';
 
-const SliderBtn = ({ moveSlide, direction }) => {
+const TestimonySliderBtn = ({ moveSlide, direction }) => {
   return(
     <button
       onClick={ moveSlide }
+      className={ direction === 'prev' ? 'left' : 'right'}
     >
       <img
         src={ direction === 'prev' ? prevArrow : nextArrow }
@@ -14,4 +15,4 @@ const SliderBtn = ({ moveSlide, direction }) => {
   );
 };
 
-export default SliderBtn;
+export default TestimonySliderBtn;

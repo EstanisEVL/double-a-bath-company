@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 /*---- Imported components ----*/
 import Testimony from './Testimony';
-import SliderBtn from './SliderBtn';
+import TestimonySliderBtn from './TestimonySliderBtn';
 
 const TestimonySlider = ({ slides }) => {
   // Variables y estados:
@@ -28,7 +28,7 @@ const TestimonySlider = ({ slides }) => {
   return(
     <div className='testimony-slider--container'>
       <div className='testimony-slider'>
-        <SliderBtn moveSlide={ prevSlide } direction={ 'prev' } />
+        <TestimonySliderBtn moveSlide={ prevSlide } direction={ 'prev' } />
           {
             slides.map((item, index) => {
               return (
@@ -48,7 +48,7 @@ const TestimonySlider = ({ slides }) => {
               )
             })
           }
-        <SliderBtn moveSlide={ nextSlide } direction={ 'next' } />
+        <TestimonySliderBtn moveSlide={ nextSlide } direction={ 'next' } />
       </div>
       <div className='ellipse-container'>
         {Array.from({length: slides.length}).map((item, index) => {

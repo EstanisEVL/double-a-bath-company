@@ -1,28 +1,35 @@
-/*---- Imported hooks: ----*/
 import { lazy, Suspense } from 'react';
+/*---- Imported hooks: ----*/
 import useNearScreen from '../../hooks/useNearScreen';
-import Spinner from '../spinner/Spinner';
 
 /*---- Imported components: ----*/
+import Spinner from '../spinner/Spinner';
 const Services = lazy(
   () => import('./Services')
 );
 
 const LazyServices = () => {
   const  { isNearScreen, fromRef }  = useNearScreen({ 
-    rootMargin: '0px',
+    rootMargin: '-50px',
     threshold: 0.5 
   });
 
-  return <div 
-    className={ isNearScreen ? 'lazy-container visible' : 'lazy-container left'}
+  return(
+    <div 
+    className={
+      isNearScreen ?
+      'lazy-container visible' :
+      'lazy-container entrance'
+      }
     ref={ fromRef }>
-      <Suspense fallback={ <Spinner /> }>
+      <Suspense 
+        fallback={ <Spinner /> }>
         { 
           isNearScreen ? <Services /> : <Spinner /> 
         }
       </Suspense>
-  </div>;
+  </div>
+  );
 };
 
 export default LazyServices;

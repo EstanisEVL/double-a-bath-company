@@ -10,24 +10,25 @@ const Testimonials = lazy(
   
 const LazyTestimonials = () => {
   const  { isNearScreen, fromRef }  = useNearScreen({ 
-    rootMargin: '0px',
+    rootMargin: '-50px',
     threshold: 0.5 
   });
 
-  return <div
-    className={
-      isNearScreen ?
-      'lazy-container visible' :
-      'lazy-container left'
-      }
-    ref={ fromRef }>
-      <Suspense
-        fallback={ <Spinner /> }>
-          {
-            isNearScreen ? <Testimonials /> : <Spinner />
-          }
-      </Suspense>
-  </div>;
+  return(
+    <div
+      className={
+        isNearScreen ?
+        'lazy-container visible' :
+        'lazy-container entrance'
+        }
+      ref={ fromRef }>
+        <Suspense
+          fallback={ <Spinner /> }>
+            {
+              isNearScreen ? <Testimonials /> : <Spinner />
+            }
+        </Suspense>
+    </div>);
 };
 
 export default LazyTestimonials;

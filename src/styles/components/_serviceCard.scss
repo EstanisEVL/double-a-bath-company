@@ -1,31 +1,101 @@
 @use '../utils/shared' as *;
 
-.service-card--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  transition: all 0.3s ease;
-  img {
-    margin-bottom: 4rem;
-    max-width: 8rem;
-    min-height: 8rem;
-  }
-  .service-card--text-container {
-    color: $font-dark;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    text-align: center;
-    h3 {
-      margin-bottom: 2rem;
-      text-transform: uppercase;
+@media only screen and (max-width: 599px) {
+  .service-card--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s ease;
+    img {
+      margin-bottom: 4rem;
+      max-width: 8rem;
+      min-height: 8rem;
     }
-    p {
-      max-width: 28.5rem;
-      font-weight: 400;
+    .service-card--text-container {
+      color: $font-dark;
+      line-height: 2.3rem;
+      text-align: center;
+      h3 {
+        font-size: $fz-subtitle;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        max-width: 28.5rem;
+      }
+    }
+    &:active {
+      transform: scale(1.1);
     }
   }
-  &:hover {
-    transform: scale(1.1);
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .service-card--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s ease;
+    img {
+      margin-bottom: 4rem;
+      max-width: 8rem;
+      min-height: 8rem;
+    }
+    .service-card--text-container {
+      color: $font-dark;
+      line-height: 2.3rem;
+      text-align: center;
+      h3 {
+        font-size: $fz-subtitle;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: $fz-subtitle;
+        font-weight: 400;
+        max-width: 28.5rem;
+      }
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .service-card--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 20%;
+    transition: all 0.3s ease;
+    img {
+      margin-bottom: 4rem;
+      max-width: 8rem;
+      min-height: 8rem;
+    }
+    .service-card--text-container {
+      color: $font-dark;
+      line-height: 2.3rem;
+      text-align: center;
+      h3 {
+        font-size: $fz-subtitle;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: $fz-text;
+        font-weight: 400;
+        max-width: 28.5rem;
+      }
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
