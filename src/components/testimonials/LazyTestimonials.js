@@ -14,7 +14,7 @@ const LazyTestimonials = () => {
     threshold: 0.5 
   });
 
-  return <div
+  return <div id="TESTIMONIALS"
     className={
       isNearScreen ?
       'lazy-container visible' :

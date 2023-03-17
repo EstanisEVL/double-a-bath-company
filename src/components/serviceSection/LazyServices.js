@@ -14,7 +14,7 @@ const LazyServices = () => {
     threshold: 0.5 
   });
 
-  return <div 
+  return <div  id="OURSERVICE"
     className={ isNearScreen ? 'lazy-container visible' : 'lazy-container left'}
     ref={ fromRef }>
       <Suspense fallback={ <Spinner /> }>

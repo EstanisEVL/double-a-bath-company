@@ -10,20 +10,22 @@ import Footer from './components/footer/Footer';
 
 // Imported styles:
 import './styles/styles.scss';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 	return (
 		<div className='App'>
-			<DrawerAppBar />
-
-      <HeroSec />
-      <LazyServices />
-      <LazyWork />
-      <LazyTestimonials />
-
-      <Contact />
-      <FloatingWhatsappButton />
-      <Footer />
+			<BrowserRouter>
+				<DrawerAppBar />
+				<HeroSec />
+				<LazyServices />
+				<LazyWork />
+                
+				<LazyTestimonials />
+				<Contact />
+				<FloatingWhatsappButton />
+				<Footer />
+			</BrowserRouter>
 		</div>
 	);
 }

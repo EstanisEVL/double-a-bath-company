@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 function Contact() {
 	return (
-		<div className='container'>
+		<div className='container' id="FREECONSULTATION">
 			<h2 variant='h2' className='title'>
 				BATHROOM REMODELING CONSULTATION
 			</h2>

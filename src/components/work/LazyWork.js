@@ -15,7 +15,7 @@ const LazyWork = () => {
   });
   
   return(
-    <div
+    <div  id="OURWORK"
     className={ 
       isNearScreen ?
       'lazy-container visible' :
