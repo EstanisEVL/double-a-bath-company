@@ -1,13 +1,12 @@
-import { Typography } from '@mui/material';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function Contact() {
 	return (
 		<div className='container'>
-			<Typography variant='h3' className='title'>
+			<h2 variant='h2' className='title'>
 				BATHROOM REMODELING CONSULTATION
-			</Typography>
+			</h2>
 			<Form>
 				<div className='conteinerInput'>
 					<Form.Group className='group'>
@@ -17,8 +16,8 @@ function Contact() {
 						</div>
 					</Form.Group>
 					<Form.Group className='group'>
-						<Form.Label className='label'>Last name</Form.Label>
-						<div className='conteInput'>
+						<Form.Label className='label1'>Last name</Form.Label>
+						<div className='conteInput1'>
 							<Form.Control className='input' type='text' placeholder='Enter your last name' />
 						</div>
 					</Form.Group>
@@ -31,16 +30,16 @@ function Contact() {
 						</div>
 					</Form.Group>
 					<Form.Group className='group'>
-						<Form.Label className='label'>E-mail</Form.Label>
-						<div className='conteInput'>
+						<Form.Label className='label1'>E-mail</Form.Label>
+						<div className='conteInput1'>
 							<Form.Control className='input' type='email' placeholder='name@example.com' />
 						</div>
 					</Form.Group>
 				</div>
 				<Form.Group>
 					<Form.Label className='labelTa'>Tell us about your project</Form.Label>
-					<div className='conteInput'>
-						<Form.Control className='inputTa' as='textarea' rows={5} placeholder='Type something...' />
+					<div className='conteInputTa'>
+						<Form.Control className='inputTa' as='textarea' rows={9} placeholder='Type something...' />
 					</div>
 				</Form.Group>
 				<div className='conteBtn'>

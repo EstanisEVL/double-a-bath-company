@@ -17,9 +17,10 @@
       font-family: "Montserrat";
     }
     .btnHero{
-      font-size: clamp(12px, 2vw, 16px);
-      &:hover{
-        background-color: #3891E3;;
+      font-size: clamp(12px, 2vw, 24px);
+      margin-top: 8rem;
+      &:hover{ 
+        background-color: #1969B3;;
       }
     }
   }
