@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/double-a-bath-company/static/css/main.54055ac6.css",
-    "main.js": "/double-a-bath-company/static/js/main.5386cbe7.js",
+    "main.css": "/double-a-bath-company/static/css/main.98a26010.css",
+    "main.js": "/double-a-bath-company/static/js/main.fee38d16.js",
     "static/js/161.29a4f93e.chunk.js": "/double-a-bath-company/static/js/161.29a4f93e.chunk.js",
-    "static/js/880.11ced841.chunk.js": "/double-a-bath-company/static/js/880.11ced841.chunk.js",
-    "static/js/337.488eef2b.chunk.js": "/double-a-bath-company/static/js/337.488eef2b.chunk.js",
+    "static/js/880.6241eb4b.chunk.js": "/double-a-bath-company/static/js/880.6241eb4b.chunk.js",
+    "static/js/516.de9904ea.chunk.js": "/double-a-bath-company/static/js/516.de9904ea.chunk.js",
     "static/media/HeroSecImg.png": "/double-a-bath-company/static/media/HeroSecImg.f5f22ee5dc31362011b0.png",
     "static/media/04_after.png": "/double-a-bath-company/static/media/04_after.fd75a011a11d8de52d96.png",
     "static/media/02_before.png": "/double-a-bath-company/static/media/02_before.000245b3f19001a2d997.png",
@@ -26,17 +26,17 @@
     "static/media/comparison-slider-arrows.svg": "/double-a-bath-company/static/media/comparison-slider-arrows.627f2fb4f9767ddc2423.svg",
     "index.html": "/double-a-bath-company/index.html",
     "static/media/prev-arrow.svg": "/double-a-bath-company/static/media/prev-arrow.fa7d48cb152e0425da3a841d0f5524ad.svg",
-    "static/media/work-prev-arrow.svg": "/double-a-bath-company/static/media/work-prev-arrow.8020f62f5b2a4055a375ae0c4dc2bb0b.svg",
+    "static/media/work-prev-arrow.svg": "/double-a-bath-company/static/media/work-prev-arrow.7107737f05f7ac35263c02953260094e.svg",
     "static/media/next-arrow.svg": "/double-a-bath-company/static/media/next-arrow.48eeee182db67c60face3349d7c0454e.svg",
     "static/media/work-next-arrow.svg": "/double-a-bath-company/static/media/work-next-arrow.5d439b67f3b669b011aae99d871f0a91.svg",
-    "main.54055ac6.css.map": "/double-a-bath-company/static/css/main.54055ac6.css.map",
-    "main.5386cbe7.js.map": "/double-a-bath-company/static/js/main.5386cbe7.js.map",
+    "main.98a26010.css.map": "/double-a-bath-company/static/css/main.98a26010.css.map",
+    "main.fee38d16.js.map": "/double-a-bath-company/static/js/main.fee38d16.js.map",
     "161.29a4f93e.chunk.js.map": "/double-a-bath-company/static/js/161.29a4f93e.chunk.js.map",
-    "880.11ced841.chunk.js.map": "/double-a-bath-company/static/js/880.11ced841.chunk.js.map",
-    "337.488eef2b.chunk.js.map": "/double-a-bath-company/static/js/337.488eef2b.chunk.js.map"
+    "880.6241eb4b.chunk.js.map": "/double-a-bath-company/static/js/880.6241eb4b.chunk.js.map",
+    "516.de9904ea.chunk.js.map": "/double-a-bath-company/static/js/516.de9904ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54055ac6.css",
-    "static/js/main.5386cbe7.js"
+    "static/css/main.98a26010.css",
+    "static/js/main.fee38d16.js"
   ]
 }
