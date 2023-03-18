@@ -1,0 +1,62 @@
+@use '../utils/shared' as *;
+
+.gallery-section--container {
+  background-color: $primary-color-light;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  .gallery-section--content-container {
+    background-color: $bg-main;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92%;
+    h2 {
+      color: $primary-color-dark;
+      font-family: 'Montserrat';
+      font-size: $fz-title;
+      font-weight: 700;
+      line-height: 4.4rem;
+      letter-spacing: 0em;
+      margin: 10rem 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 15rem;
+      max-width: 90%;
+
+      .gallery-picture--container {
+        color: $primary-color;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.5s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+        img {
+          max-width: 100%;
+        }
+        h3 {
+          bottom: 3rem;
+          right: 2rem;
+          color: $bg-main;
+          font-size: $fz-title;
+          font-weight: 600;
+          line-height: 4.6rem;
+          letter-spacing: 0em;
+          max-width: 60%;
+          position: absolute;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

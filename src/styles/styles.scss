@@ -2,7 +2,7 @@
 @import './base/reset';
 @import './base/typo';
 
-/*---- Animation ----*/
+/*---- Lazy loading ----*/
 @import './animations/lazyLoad';
 
 /*---- Components ----*/
@@ -13,8 +13,7 @@
 @import './components/serviceCard';
 @import './components/work';
 @import './components/workSlider';
-@import './components/sliderHandle';
-
+@import './components/gallery';
 @import './components/testimonials';
 @import './components/testimony';
 @import './components/contact';

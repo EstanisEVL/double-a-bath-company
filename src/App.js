@@ -5,6 +5,9 @@ import DrawerAppBar from './components/navBar/DrawerAppBar';
 import HeroSec from './components/hero/HeroSec';
 import LazyServices from './components/serviceSection/LazyServices';
 import LazyWork from './components/work/LazyWork';
+
+import LazyGallery from './components/gallery/LazyGallery';
+
 import LazyTestimonials from './components/testimonials/LazyTestimonials';
 import LazyContact from './components/contact/LazyContact';
 import FloatingWhatsappButton from './components/floatingWhatsappButton/FloatingWhatsappButton';
@@ -22,6 +25,10 @@ function App() {
 				<LazyServices />
 				<LazyWork />
                 
+        {/* REEMPLAZAR POR LAZY: */}
+        <LazyGallery />
+
+
 				<LazyTestimonials />
 				<LazyContact />
 				<FloatingWhatsappButton />
