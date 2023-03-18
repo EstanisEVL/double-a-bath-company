@@ -1,12 +1,13 @@
 import React from 'react';
-import { AppBar, Button, CssBaseline, Divider, Drawer, IconButton, Link, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import MenuIcon from '@mui/icons-material/Menu';
 import PropTypes from 'prop-types';
 import logo from '../../assets/img/logo.png';
+import { HashLink as Link } from "react-router-hash-link";
 
 const drawerWidth = 240;
-const navItems = ['HOME', 'OUR SERVICE', 'OUR WORK', 'TESTIMONIALS'];
+const navItems = [{Title:"HOME", Id:""},{Title:"OUR SERVICE", Id:"OURSERVICE"},{Title:"OUR WORK", Id:"OURWORK"},{Title:"TESTIMONIALS", Id:"TESTIMONIALS"}];
 
 function DrawerAppBar(props) {
 	const { window } = props;
@@ -26,10 +27,10 @@ function DrawerAppBar(props) {
 			<Divider />
 			<List>
 				{navItems.map((item) => (
-					<ListItem key={item} disablePadding>
+					<ListItem key={item.Title} disablePadding>
 						<ListItemButton sx={{ textAlign: 'center' }}>
 							<ListItemText>
-								<Link sx={{ textDecoration: 'none', color: '#000' }}>{item}</Link>
+								<Link to={`#${item.Id}`} smooth sx={{ textDecoration: 'none', color: '#000' }}>{item.Title}</Link>
 							</ListItemText>
 						</ListItemButton>
 					</ListItem>
@@ -37,7 +38,7 @@ function DrawerAppBar(props) {
 				<ListItem disablePadding>
 					<ListItemButton sx={{ textAlign: 'center' }}>
 						<ListItemText>
-							<Link sx={{ textDecoration: 'none', color: '#1969B3' }}>FREE CONSULTATION</Link>
+							<Link to={'#FREECONSULTATION'} smooth sx={{ textDecoration: 'none', color: '#1969B3' }}>FREE CONSULTATION</Link>
 						</ListItemText>
 					</ListItemButton>
 				</ListItem>
@@ -62,11 +63,11 @@ function DrawerAppBar(props) {
 					</Typography>
 					<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 						{navItems.map((item) => (
-							<Button className='navItem' as={Link} key={item} size='small' sx={{ color: '#fff' }}>
-								{item}
+							<Button className='navItem' as={Link} to={`#${item.Id}`} smooth key={item.Title} size='small' sx={{ color: '#fff' }}>
+								{item.Title}
 							</Button>
 						))}
-						<Button className='navItem' as={Link} size='small' sx={{ backgroundColor: '#fff', color: '#1969B3' }}>
+						<Button className='navItem btnNav' as={Link} to={'#FREECONSULTATION'} smooth size='small' sx={{ backgroundColor: '#fff', color: '#1969B3' }}>
 							FREE CONSULTATION
 						</Button>
 					</Box>

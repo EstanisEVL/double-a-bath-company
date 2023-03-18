@@ -1,9 +1,12 @@
+import { BrowserRouter } from 'react-router-dom';
+
 // Imported components:
 import DrawerAppBar from './components/navBar/DrawerAppBar';
 import HeroSec from './components/hero/HeroSec';
 import LazyServices from './components/serviceSection/LazyServices';
 import LazyWork from './components/work/LazyWork';
 import LazyTestimonials from './components/testimonials/LazyTestimonials';
+import LazyContact from './components/contact/LazyContact';
 import FloatingWhatsappButton from './components/floatingWhatsappButton/FloatingWhatsappButton';
 import Footer from './components/footer/Footer';
 
@@ -13,16 +16,17 @@ import './styles/styles.scss';
 function App() {
 	return (
 		<div className='App'>
-			<DrawerAppBar />
-
-      <HeroSec />
-      <LazyServices />
-      <LazyWork />
-      <LazyTestimonials />
-
-
-      <FloatingWhatsappButton />
-      <Footer />
+			<BrowserRouter>
+				<DrawerAppBar />
+				<HeroSec />
+				<LazyServices />
+				<LazyWork />
+                
+				<LazyTestimonials />
+				<LazyContact />
+				<FloatingWhatsappButton />
+				<Footer />
+			</BrowserRouter>
 		</div>
 	);
 }

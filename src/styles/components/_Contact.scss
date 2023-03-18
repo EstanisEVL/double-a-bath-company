@@ -1,0 +1,159 @@
+@use '../utils/shared' as *;
+
+.contact-section--container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color-light;
+  padding-bottom: 5rem;
+  .contact-section--title{
+    color: $primary-color-dark;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $fz-title;
+    line-height: 4.4rem;
+    max-width: 50%;
+    padding: 10rem 0;
+    text-align: center;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    .contact-form--field{
+      display: flex;
+      gap: 2rem;
+      width: 100%;
+      @media only screen and (max-width: 599px) {
+        display: block;
+      }
+        
+      .form-field--container {
+        flex-basis: 100%;
+        .form-field--label {
+          font-family: 'Roboto';
+          font-weight: 400;
+          font-size: $fz-subtitle;
+          line-height: 2.3rem;
+        }
+        .last-name-label {
+          visibility: hidden;
+        }
+        .form-field--input-container{
+          display: flex;
+          flex-direction: column;
+          .input{
+            border-radius: 1rem;
+            min-height: 6rem;
+            min-width: 50%;
+            resize: none;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: $fz-subtitle;
+            line-height: 2.3rem;
+            color: $font-dark;
+            border: none;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            &:focus {
+              outline: none;
+            }
+            &::placeholder{
+              color: #B4B4B4;
+            }
+          }
+          .input-error {
+            border: 0.2rem solid $error;
+          }
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+          -webkit-appearance: none; 
+          margin: 0; 
+        }
+        .error-msg {
+          margin-bottom: 2rem;
+          color: $error;
+          font-size: $fz-subtitle;
+          font-weight: 700;
+        }
+      }
+    }
+    .text-area--container {
+      width: 100%;
+      .text-area--label {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: $fz-subtitle;
+        line-height: 2.3rem;
+      }
+      .text-area--input-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        .text-area--input{
+          border: none;
+          border-radius: 1rem;
+          color: $font-dark;
+          resize: none;
+          font-family: 'Roboto';
+          font-weight: 400;
+          font-size: $fz-subtitle;
+          line-height: 2.3rem;
+          padding-top: 2rem;
+          padding-left: 2rem;
+          margin-bottom: 2rem;
+          min-height: 19.6rem;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder{
+            color: #B4B4B4;
+          }
+        }
+        .input-error {
+          border: 0.2rem solid $error;
+        }
+        .error-msg {
+          color: $error;
+          font-size: $fz-subtitle;
+          font-weight: 700;
+        }
+      }
+    }
+    .contact-form--btn-container{
+      display: grid;
+      place-items: center;
+      margin-top: 7rem;
+      margin-bottom: 20rem;
+      @media only screen and (max-width:599px){
+        margin-bottom: 10rem;
+      }
+      .contact-form--btn{
+        padding: 0.6em 1em;
+        border-radius: 1rem;
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        text-align: center;
+        color: $bg-main;
+        background-color: $primary-color;
+        cursor: pointer;
+        border: none;
+        &:hover{
+            background-color: $primary-color-dark;
+          }
+        }
+      @media only screen and (max-width:599px){
+        &:active{
+          background-color: $primary-color-dark;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

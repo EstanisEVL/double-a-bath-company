@@ -14,21 +14,21 @@ const LazyTestimonials = () => {
     threshold: 0.5 
   });
 
-  return(
-    <div
-      className={
-        isNearScreen ?
-        'lazy-container visible' :
-        'lazy-container entrance'
-        }
-      ref={ fromRef }>
-        <Suspense
-          fallback={ <Spinner /> }>
-            {
-              isNearScreen ? <Testimonials /> : <Spinner />
-            }
-        </Suspense>
-    </div>);
+return(
+  <div id="TESTIMONIALS"
+    className={
+      isNearScreen ?
+      'lazy-container visible' :
+      'lazy-container entrance'
+      }
+    ref={ fromRef }>
+      <Suspense
+        fallback={ <Spinner /> }>
+          {
+            isNearScreen ? <Testimonials /> : <Spinner />
+          }
+      </Suspense>
+  </div>);
 };
 
 export default LazyTestimonials;

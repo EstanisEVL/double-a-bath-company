@@ -7,7 +7,7 @@ const HeroSec = () => {
 		<Box className="ImgHero">
 			<Container maxWidth="md" className="conteinerSlogan" >
 				<h1 className="slogan">Make your bathroom an stunning place. Beautiful remodeling, with the best quality.</h1>
-				<Button as={Link} sx={{ color: '#fff', backgroundColor: '#1969B3' }}>FREE CONSULTATION</Button>
+				<Button as={Link} className='btnHero' sx={{ color: '#fff', backgroundColor: '#3891E3'}}>FREE CONSULTATION</Button>
 			</Container>
 		</Box>
 	);

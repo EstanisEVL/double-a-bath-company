@@ -4,32 +4,32 @@ import useNearScreen from '../../hooks/useNearScreen';
 
 /*---- Imported components ----*/
 import Spinner from '../spinner/Spinner';
-const Work = lazy(
-  () => import('./Work')
+const Contact = lazy(
+  () => import('./Contact')
 );
 
-const LazyWork = () => {
-  const  { isNearScreen, fromRef }  = useNearScreen({ 
+const LazyContact = () => {
+  const { isNearScreen, fromRef } = useNearScreen({
     rootMargin: '-50px',
-    threshold: 0.5 
+    treshold: 0.5
   });
-  
+
   return(
-    <div id="OURWORK"
-      className={ 
+    <div id="FREECONSULTATION"
+      className={
         isNearScreen ?
         'lazy-container visible' :
         'lazy-container entrance'
-        }
+      }
       ref={ fromRef }>
         <Suspense
           fallback={ <Spinner /> }>
-            {
-              isNearScreen ? <Work /> : <Spinner />
-            }
+          {
+            isNearScreen ? <Contact /> : <Spinner />
+          }
         </Suspense>
     </div>
   );
 };
 
-export default LazyWork;
+export default LazyContact;
