@@ -1,53 +1,123 @@
 @use '../utils/shared' as *;
 
-.modal-content {
-  background-color: $bg-main;
-  border-radius: 2rem;
-  padding: 2rem;
-  .modal-header {
-    border-bottom: none;
-    min-height: 5rem;
-    .btn-close {
-      background: url('../../assets/svg/close-btn.svg') center/1em auto no-repeat;
-      color: $primary-color;
-      font-size: 5rem;
-      opacity: 1;
+@media only screen and (max-width: 599px) {
+  .modal-content {
+    background-color: $bg-main;
+    border-radius: 2rem;
+    padding: 2rem;
+    max-height: 80vh;
+    .modal-header {
+      order: 0;
+      border-bottom: none;
+      .btn-close {
+        background: url('../../assets/svg/close-btn.svg') center/1em auto no-repeat;
+        color: $primary-color;
+        font-size: 2.5rem;
+        opacity: 1;
+      }
     }
-  }
-  .modal-body {
-    .modal--slider-container {
-      display: flex;
-      justify-content: space-between;
-      .modal--slider {
-
-
-        .slide--container {
-          display: flex;
-          justify-content: center;
-          gap: 4rem;
-          .slide-img--container {
-            img {
+    .modal-body {
+      order: 1;
+      .modal--slider-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 75% 25%;
+        grid-template-areas: 
+        'slider slider'
+        'lArrow rArrow'
+        ;
+        .modal--slider {
+          grid-area: slider;
+          .slide--container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            .slide-img--container {
               max-width: 100%;
+              img {
+                max-width: 100%;
+              }
             }
           }
         }
+        .slider-btn {
+          background-color: transparent;
+          border: none;
+          order: 1;
+        }
+        .left {
+          grid-area: lArrow;
+        }
+        .right {
+          grid-area: rArrow;
+        }
       }
-      .slider-btn {
-        background-color: transparent;
-        border: none;
+    }
+    .modal-header {
+      order: 0;
+      .modal-title {
+        h4 {
+          color: $font-dark;
+          font-family: 'Roboto';
+          font-size: $fz-subtitle;
+          font-weight: 500;
+          line-height: 4.6rem;
+          letter-spacing: 0em;
+          text-align: start;
+        }
       }
     }
   }
-  .modal-header {
-    .modal-title {
-      h4 {
-        color: $font-dark;
-        font-family: 'Roboto';
-        font-size: 2.4rem;
-        font-weight: 500;
-        line-height: 4.6rem;
-        letter-spacing: 0em;
-        text-align: start;
+}
+
+@media only screen and (min-width: 600px) {
+  .modal-content {
+    background-color: $bg-main;
+    border-radius: 2rem;
+    padding: 2rem;
+    .modal-header {
+      border-bottom: none;
+      min-height: 5rem;
+      .btn-close {
+        background: url('../../assets/svg/close-btn.svg') center/1em auto no-repeat;
+        color: $primary-color;
+        font-size: 5rem;
+        opacity: 1;
+      }
+    }
+    .modal-body {
+      .modal--slider-container {
+        display: flex;
+        justify-content: space-between;
+        .modal--slider {
+          .slide--container {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            .slide-img--container {
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+        .slider-btn {
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
+    .modal-header {
+      .modal-title {
+        h4 {
+          color: $font-dark;
+          font-family: 'Roboto';
+          font-size: 2.4rem;
+          font-weight: 500;
+          line-height: 4.6rem;
+          letter-spacing: 0em;
+          text-align: start;
+        }
       }
     }
   }

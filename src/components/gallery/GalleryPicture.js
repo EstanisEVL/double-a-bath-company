@@ -18,7 +18,7 @@ const GalleryPicture = ({ picture }) => {
       <GalleryModal
         show={ modalShow }
         onHide={ () => setModalShow(false) }
-        title={ picture.title }
+        title={ picture.description }
         gallery={ picture.pictures }
       />
     </>
