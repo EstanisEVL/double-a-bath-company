@@ -8,7 +8,8 @@
       color: $bg-main;
       display: flex;
       flex-direction: column;
-      h3 {
+      .content--h3 {
+        margin: 0;
         background-color: $primary-color;
         font-family: 'Roboto';
         font-size: $fz-subtitle;
@@ -35,7 +36,8 @@
       color: $bg-main;
       display: flex;
       flex-direction: column;
-      h3 {
+      .content--h3 {
+        margin: 0;
         background-color: $primary-color;
         border-radius: 5rem 5rem 0 0;
         font-family: 'Roboto';

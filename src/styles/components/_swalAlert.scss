@@ -1,0 +1,10 @@
+@use '../utils/shared' as *;
+
+.swal2-popup {
+  min-width: 50%;
+  min-height: 20vh;
+  .swal2-title {
+    color: $primary-color-dark;
+    font-size: $fz-title;
+  }
+};
