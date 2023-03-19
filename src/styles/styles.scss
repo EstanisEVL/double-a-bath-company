@@ -5,6 +5,9 @@
 /*---- Lazy loading ----*/
 @import './animations/lazyLoad';
 
+/*---- Bootstrap ----*/
+@import "~bootstrap/scss/bootstrap";
+
 /*---- Components ----*/
 @import './components/drawerAppBar';
 @import './components/heroSec';
@@ -14,6 +17,7 @@
 @import './components/work';
 @import './components/workSlider';
 @import './components/gallery';
+@import './components/galleryModal';
 @import './components/testimonials';
 @import './components/testimony';
 @import './components/contact';

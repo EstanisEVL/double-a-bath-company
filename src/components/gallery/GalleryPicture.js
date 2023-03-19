@@ -1,12 +1,27 @@
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import GalleryModal from './GalleryModal';
+
 const GalleryPicture = ({ picture }) => {
+  const [ modalShow, setModalShow ] = useState(false);
+
   return(
-    <a
-    href={ picture.url }
-    className='gallery-picture--container'
-    >
-      <img src={ picture.img } alt={ picture.title }/>
-      <h3>{ picture.title }</h3>
-    </a>
+    <>
+      <Button
+      variant='primary'
+      onClick={() => setModalShow(true)}
+      className='gallery-picture--container'
+      >
+        <img src={ picture.img } alt={ picture.title }/>
+        <h3>{ picture.title }</h3>
+      </Button>
+      <GalleryModal
+        show={ modalShow }
+        onHide={ () => setModalShow(false) }
+        title={ picture.title }
+        gallery={ picture.pictures }
+      />
+    </>
   );
 };
 

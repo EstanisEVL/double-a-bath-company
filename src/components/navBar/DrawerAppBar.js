@@ -7,7 +7,7 @@ import logo from '../../assets/img/logo.png';
 import { HashLink as Link } from "react-router-hash-link";
 
 const drawerWidth = 240;
-const navItems = [{Title:"HOME", Id:""},{Title:"OUR SERVICE", Id:"OURSERVICE"},{Title:"OUR WORK", Id:"OURWORK"},{Title:"TESTIMONIALS", Id:"TESTIMONIALS"}];
+const navItems = [{Title:"HOME", Id:""},{Title:"OUR SERVICES", Id:"OURSERVICE"},{Title:"OUR WORK", Id:"OURWORK"},{Title:"TESTIMONIALS", Id:"TESTIMONIALS"}];
 
 function DrawerAppBar(props) {
 	const { window } = props;
@@ -20,7 +20,7 @@ function DrawerAppBar(props) {
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
 			<Box className='navBar'>
-				<Link>
+				<Link to={'/'} smooth>
 					<img src={logo} alt='Logo DoubleA' />
 				</Link>
 			</Box>

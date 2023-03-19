@@ -20,6 +20,7 @@
       line-height: 4.4rem;
       letter-spacing: 0em;
       margin: 10rem 0;
+      max-width: 50%;
       text-align: center;
       text-transform: uppercase;
     }
@@ -33,7 +34,8 @@
       max-width: 90%;
 
       .gallery-picture--container {
-        color: $primary-color;
+        border: none;
+        background-color: transparent;
         cursor: pointer;
         text-decoration: none;
         position: relative;

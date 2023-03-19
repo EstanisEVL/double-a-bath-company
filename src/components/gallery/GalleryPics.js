@@ -1,12 +1,12 @@
 import GalleryPicture from "./GalleryPicture";
 
-const GalleryPics = ({ images }) => {
+const GalleryPics = ({ pictures }) => {
   return(
     <div
       className='gallery'
     >
       {
-        images.map((item, index) => {
+        pictures.map((item, index) => {
           return <GalleryPicture
             index={ index }  
             picture={ item }

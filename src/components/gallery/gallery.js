@@ -13,7 +13,7 @@ const Gallery = () => {
         className='gallery-section--content-container'
       >
         <h2>bathroom remodel gallery</h2>
-        <GalleryPics images={ GalleryPicsList } />
+        <GalleryPics pictures={ GalleryPicsList } />
       </div>
     </section>
   );

@@ -7,32 +7,33 @@ import img2 from '../../assets/img/bathroom-gallery-imgs/gallery-img-2.png'
 import img3 from '../../assets/img/bathroom-gallery-imgs/gallery-img-3.png'
 import img4 from '../../assets/img/bathroom-gallery-imgs/gallery-img-4.png'
 
-// AGREGAR ENLACES A LOS MODALES!!
+/*---- Imported arrays ----*/
+import { Modal1, Modal2, Modal3, Modal4 } from './ModalSliderImagesList'
 
 const GalleryPicsList = [
   {
     id: uuidv4(),
     title: 'Karen\'s Bathroom',
     img: img1,
-    url: ''
+    pictures: Modal1
   },
   {
     id: uuidv4(),
     title: 'Laura\'s Master',
     img: img2,
-    url: ''
+    pictures: Modal2
   },
   {
     id: uuidv4(),
     title: 'Laura\'s Guest',
     img: img3,
-    url: ''
+    pictures: Modal3
   },
   {
     id: uuidv4(),
     title: 'John\'s Bathroom',
     img: img4,
-    url: ''
+    pictures: Modal4
   }
 ]
 
