@@ -1,7 +1,7 @@
 @use '../utils/shared' as *;
 
 .ImgHero{
-  background-image: url("../../assets/img/HeroSecImg.png");
+  background-image: url("../../assets/img/hero-section.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,15 +12,27 @@
     text-align: center;
     .slogan{
       color: #ffffff;
-      font-weight: 700;
-      font-size: clamp(20px, 4vw, 40px);
       font-family: "Montserrat";
+      font-size: clamp(2rem, 4vw, 4rem);
+      font-weight: 700;
+      line-height: 5rem;
+      margin-bottom: 8rem;
+      letter-spacing: 0.085em;
     }
     .btnHero{
+      background-color: $primary-color;
+      color: $bg-main;
+      border-radius: 1rem;
+      font-family: 'Roboto';
       font-size: clamp(12px, 2vw, 24px);
-      margin-top: 8rem;
-      &:hover{ 
-        background-color: #1969B3;;
+      font-weight: 600;
+      line-height: 2.8rem;
+      letter-spacing: 0em;
+      padding: 1.4rem 2.1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      &:hover{
+        background-color: $primary-color-dark;
       }
     }
   }

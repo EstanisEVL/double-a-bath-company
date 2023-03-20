@@ -27,14 +27,12 @@ export const useForm = ( initialForm, formValidations ) => {
     e.preventDefault();
     handleChange(e);
     setErrors(formValidations(form));
-    showAlert();
-    
     if(Object.keys(errors).length === 0) {
       setForm(initialForm);
     } else {
       return;
     };
-    
+    showAlert();
   };
 
   return {

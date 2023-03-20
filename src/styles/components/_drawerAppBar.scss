@@ -1,17 +1,42 @@
 @use '../utils/shared' as *;
 
 .navBar{
-    background-color: #252525 !important;
-    .logo{
-        max-width: clamp(130px, 5vw, 186px);
+  background-color: $bg-main-dark !important;
+  .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+    .logo-mobile {
+      width: fit-content;
+      height: fit-content;
+      max-width: 25%;
+      @media only screen and (min-width: 600px) {
+        display: none;
+      }
     }
-    .navItem{
-        font-size: clamp(10px, 1vw, 14px);
-        font-weight: 500;
-        text-decoration: none;
+  }
+  .logo-drawer {
+    width: fit-content;
+    height: fit-content;
+  }
+  .logo{
+    max-width: clamp(13rem, 5vw, 18.6rem);
+  }
+  .navItem{
+    font-family: 'Roboto';
+    font-size: clamp(1rem, 1vw, 1.4rem);
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0em;
+    text-decoration: none;
+  }
+  .btnNav {
+    font-weight: 800;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1.6rem;
+    &:hover{
+      color: $bg-main;
+      background-color: $primary-color;
     }
-    .btnNav:hover{
-        color: #ffffff;
-        background-color: $primary-color;
-    }
+  }
 }

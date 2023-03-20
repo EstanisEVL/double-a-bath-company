@@ -1,20 +1,22 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 /*---- Imported assets: ----*/
 import logo from '../../assets/img/footer-brand-logo.png';
-import SocialIcons from './SocialIcons';
 
+import SocialIcons from './SocialIcons';
 import SocialsIconList from './SocialsIconList';
 
 const Footer = () => {
   return(
     <footer className='footer-container' id='footer' >
       <div className='footer--contact-container'>
-        <a href='/'>
+        <Link to='#' smooth>
           <img
           className='footer--brand-img'
           src={ logo } 
           alt='brand logo'
           />
-        </a>
+        </Link>
         <div className='footer--consultation-txt'>
           <p>Free consultation</p>
         </div>
