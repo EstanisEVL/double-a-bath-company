@@ -24,7 +24,7 @@
       color: $bg-main;
       border-radius: 1rem;
       font-family: 'Roboto';
-      font-size: clamp(12px, 2vw, 24px);
+      font-size: $fz-title;
       font-weight: 600;
       line-height: 2.8rem;
       letter-spacing: 0em;
@@ -32,7 +32,7 @@
       text-decoration: none;
       text-transform: capitalize;
       &:hover{
-        background-color: $primary-color-dark;
+        background-color: $hero-btn-hover;
       }
     }
   }

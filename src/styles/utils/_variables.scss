@@ -7,6 +7,10 @@ $primary-color-dark: #1969B3;
 $bg-main: #FFFFFF;
 $bg-main-dark: #252525;
 
+/*---- Hero button ----*/
+$hero-btn-hover: #44a5ff;
+
+
 /*---- Footer button ----*/
 $footer-btn-bg: #333333;
 $footer-btn-hover: #D9D9D9;
@@ -15,7 +19,8 @@ $footer-btn-hover: #D9D9D9;
 $font-dark: #000000;
 
 /*---- Font sizes ----*/
-$fz-title: clamp(2rem, 5vw, 3.6rem);
+$fz-nav-item: clamp(1rem, 1vw, 1.6rem);
+$fz-title: clamp(2.5rem, 5vw, 3.6rem);
 $fz-subtitle: clamp(1.4rem, 2vw, 2rem);
 $fz-text: clamp(0.8rem, 1.5vw, 1.4rem);
 

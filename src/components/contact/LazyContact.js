@@ -18,7 +18,7 @@ const LazyContact = () => {
     <div id="FREECONSULTATION"
       className={
         isNearScreen ?
-        'lazy-container visible' :
+        'lazy-container visible-alt' :
         'lazy-container entrance'
       }
       ref={ fromRef }>

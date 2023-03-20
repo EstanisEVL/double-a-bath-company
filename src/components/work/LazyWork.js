@@ -18,7 +18,7 @@ const LazyWork = () => {
     <div id="OURWORK"
       className={ 
         isNearScreen ?
-        'lazy-container visible' :
+        'lazy-container visible-alt' :
         'lazy-container entrance'
         }
       ref={ fromRef }>

@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: $fz-title;
-    line-height: 4.4rem;
+    line-height: 3rem;
     max-width: 50%;
     padding: 10rem 0;
     text-align: center;
@@ -145,12 +145,12 @@
         cursor: pointer;
         border: none;
         &:hover{
-            background-color: $primary-color-dark;
+            background-color: $hero-btn-hover;
           }
         }
       @media only screen and (max-width:599px){
         &:active{
-          background-color: $primary-color-dark;
+          background-color: $hero-btn-hover;
           border-radius: 1rem;
         }
       }
