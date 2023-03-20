@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/double-a-bath-company/static/css/main.479c9dde.css",
-    "main.js": "/double-a-bath-company/static/js/main.6e969e15.js",
+    "main.css": "/double-a-bath-company/static/css/main.057f2003.css",
+    "main.js": "/double-a-bath-company/static/js/main.79ca30c8.js",
     "static/js/161.29a4f93e.chunk.js": "/double-a-bath-company/static/js/161.29a4f93e.chunk.js",
     "static/js/880.108e6357.chunk.js": "/double-a-bath-company/static/js/880.108e6357.chunk.js",
     "static/js/962.a7a58fad.chunk.js": "/double-a-bath-company/static/js/962.a7a58fad.chunk.js",
@@ -43,8 +43,8 @@
     "static/media/work-prev-arrow.svg": "/double-a-bath-company/static/media/work-prev-arrow.7107737f05f7ac35263c02953260094e.svg",
     "static/media/next-arrow.svg": "/double-a-bath-company/static/media/next-arrow.48eeee182db67c60face3349d7c0454e.svg",
     "static/media/work-next-arrow.svg": "/double-a-bath-company/static/media/work-next-arrow.5d439b67f3b669b011aae99d871f0a91.svg",
-    "main.479c9dde.css.map": "/double-a-bath-company/static/css/main.479c9dde.css.map",
-    "main.6e969e15.js.map": "/double-a-bath-company/static/js/main.6e969e15.js.map",
+    "main.057f2003.css.map": "/double-a-bath-company/static/css/main.057f2003.css.map",
+    "main.79ca30c8.js.map": "/double-a-bath-company/static/js/main.79ca30c8.js.map",
     "161.29a4f93e.chunk.js.map": "/double-a-bath-company/static/js/161.29a4f93e.chunk.js.map",
     "880.108e6357.chunk.js.map": "/double-a-bath-company/static/js/880.108e6357.chunk.js.map",
     "962.a7a58fad.chunk.js.map": "/double-a-bath-company/static/js/962.a7a58fad.chunk.js.map",
@@ -54,7 +54,7 @@
     "623.d2e516a3.chunk.js.map": "/double-a-bath-company/static/js/623.d2e516a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.479c9dde.css",
-    "static/js/main.6e969e15.js"
+    "static/css/main.057f2003.css",
+    "static/js/main.79ca30c8.js"
   ]
 }
