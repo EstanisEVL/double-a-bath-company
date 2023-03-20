@@ -18,7 +18,7 @@ return(
   <div id="TESTIMONIALS"
     className={
       isNearScreen ?
-      'lazy-container visible' :
+      'lazy-container visible-testimonials' :
       'lazy-container entrance'
       }
     ref={ fromRef }>
