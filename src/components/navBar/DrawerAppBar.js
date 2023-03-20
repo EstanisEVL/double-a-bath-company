@@ -30,7 +30,7 @@ function DrawerAppBar(props) {
           <ListItem key={ item.Title } disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText>
-                <Link to={`#${ item.Id }`} smooth sx={{ textDecoration: 'none', color: '#000' }}>{item.Title}</Link>
+                <Link to={`#${ item.Id }`} smooth sx={{ textDecoration: 'none', color: '#000' }} className='mobile--nav-link' >{item.Title}</Link>
               </ListItemText>
             </ListItemButton>
           </ListItem>
@@ -38,7 +38,7 @@ function DrawerAppBar(props) {
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: 'center' }}>
             <ListItemText>
-              <Link to={'#FREECONSULTATION'} smooth sx={{ textDecoration: 'none', color: '#1969B3' }}>FREE CONSULTATION</Link>
+              <Link to={'#FREECONSULTATION'} smooth sx={{ textDecoration: 'none', color: '#1969B3' }} className='mobile-nav-link--btn' >FREE CONSULTATION</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>

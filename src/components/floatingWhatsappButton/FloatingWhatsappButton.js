@@ -15,7 +15,6 @@ const FloatingWhatsappButton = () => {
     }
   };
 
-// CAMBIAR POR INTERSECTION OBSERVER:
   useEffect(() => {
     window.addEventListener('scroll', onScrollEnd, {
       passive: true
@@ -24,6 +23,7 @@ const FloatingWhatsappButton = () => {
       window.removeEventListener('scroll', onScrollEnd);
     };
   }, [])
+
 
   return(
     <a
