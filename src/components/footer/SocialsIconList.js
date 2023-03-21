@@ -1,11 +1,12 @@
-/*---- Import uuid: ----*/
+/*---- Uuidv4 ----*/
 import { v4 as uuidv4 } from 'uuid';
 
-/*---- Imported icons: ----*/
+/*---- Imported icons ----*/
 import facebookIcon from '../../assets/img/facebook.png';
 import instagramIcon from '../../assets/img/instagram.png';
 import whatsappIcon from '../../assets/img/whatsapp.png';
 
+/*---- Array ----*/
 const SocialsIconList = [
   {
     id: uuidv4(),

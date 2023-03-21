@@ -1,10 +1,11 @@
 /*---- Imported hooks ----*/
-import { useForm } from '../../hooks/useForm';
+import useForm from '../../hooks/useForm';
 
 /*---- Imported components ----*/
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+/*---- Functions and variables ----*/
 const initialForm = {
   firstName: '',
   lastName: '',
@@ -12,43 +13,37 @@ const initialForm = {
   email: '',
   comment: ''
 }
-
 const formValidations = ( form ) => {
   let errors = {};
   let emailRegEx = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-
   if(!form.firstName.trim()) {
     errors.firstName = 'First Name cannot be empty';
   };
-
   if(!form.lastName.trim()) {
     errors.lastName = 'Last Name cannot be empty';
   };
-
   if(!form.phone.trim()) {
     errors.phone = 'Phone cannot be empty';
   };
-
   if(!form.email.trim()) {
     errors.email = 'Email Address cannot be empty';
   } else if (!emailRegEx.test(form.email.trim())) {
     errors.email = 'Looks like this is not an email';
   };
-
   if(!form.comment.trim()) {
     errors.comment = 'Please tell us about your project';
   };
   return errors;
 }
-const Contact = () => {
 
+/*---- Component ----*/
+const Contact = () => {
   const {
     form,
     errors,
     handleChange,
     handleSubmit
   } = useForm(initialForm, formValidations);
-
 	return (
 		<div
       className='contact-section--container'>
@@ -85,7 +80,6 @@ const Contact = () => {
                 }
 						</div>
 					</Form.Group>
-
 					<Form.Group
             className='form-field--container'>
 						<Form.Label className='form-field--label last-name-label'>Last name</Form.Label>
@@ -104,7 +98,6 @@ const Contact = () => {
 						</div>
 					</Form.Group>
 				</div>
-
 				<div className='contact-form--field'>
 					<Form.Group
             className='form-field--container'>
@@ -144,7 +137,6 @@ const Contact = () => {
 						</div>
 					</Form.Group>
 				</div>
-
 				<Form.Group
           className='text-area--container'
           >

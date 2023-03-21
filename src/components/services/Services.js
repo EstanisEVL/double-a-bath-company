@@ -1,9 +1,10 @@
-/*---- Imported list ----*/
+/*---- Imported array ----*/
 import CardList from "./CardList";
 
-/*---- Imported components: ----*/
+/*---- Imported components ----*/
 import ServiceCard from "./ServiceCard";
 
+/*---- Component ----*/
 const Services = () => {
   return(
     <section className='services-section--container'>

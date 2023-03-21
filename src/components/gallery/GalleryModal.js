@@ -2,6 +2,7 @@
 import Modal from 'react-bootstrap/Modal';
 import ModalSlider from './ModalSlider';
 
+/*---- Component ----*/
 const GalleryModal = ({ show, onHide, title, gallery }) => {
   return (
     <Modal

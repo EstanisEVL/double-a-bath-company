@@ -1,3 +1,4 @@
+/*---- Component ----*/
 const ServiceCard = ({ img, title, description }) => {
   return(
     <div className='service-card--container'>

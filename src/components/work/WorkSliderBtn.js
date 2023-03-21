@@ -1,6 +1,8 @@
+/*---- Imported icons ----*/
 import prevArrow from '../../assets/svg/work-prev-arrow.svg';
 import nextArrow from '../../assets/svg/work-next-arrow.svg';
 
+/*---- Component ----*/
 const SliderBtn = ({ moveSlide, direction }) => {
   return(
     <button

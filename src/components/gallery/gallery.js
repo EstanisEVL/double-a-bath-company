@@ -4,6 +4,7 @@ import GalleryPicsList from "./GalleryPicsList";
 /*---- Imported components ----*/
 import GalleryPics from "./GalleryPics";
 
+/*---- Component ----*/
 const Gallery = () => {
   return(
     <section

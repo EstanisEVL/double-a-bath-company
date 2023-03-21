@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+
 /*---- Imported hooks ----*/
 import useNearScreen from '../../hooks/useNearScreen';
 
@@ -8,10 +9,11 @@ const Contact = lazy(
   () => import('./Contact')
 );
 
+/*---- Component ----*/
 const LazyContact = () => {
   const { isNearScreen, fromRef } = useNearScreen({
     rootMargin: '-50px',
-    treshold: 0.5
+    treshold: 0.25
   });
 
   return(

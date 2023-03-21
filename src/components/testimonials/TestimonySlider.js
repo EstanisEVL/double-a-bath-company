@@ -1,15 +1,17 @@
 import { useState } from 'react';
+
+/*---- Imported hooks ----*/
 import useWindowSize from '../../hooks/useWindowSize';
 
 /*---- Imported components ----*/
 import Testimony from './Testimony';
 import TestimonySliderBtn from './TestimonySliderBtn';
 
+/*---- Component ----*/
 const TestimonySlider = ({ slides }) => {
   const [ slideIndex, setSlideIndex ] = useState(0);
   const quantity = slides?.length;
   const size = useWindowSize();
-
   if(!Array.isArray(slides) || quantity === 1)
     return;
   const nextSlide = () => {
@@ -59,7 +61,6 @@ const TestimonySlider = ({ slides }) => {
           </div>
         </div>
       }
-
       {
         size.width >= 600 &&
         <div className='testimony-slider--container'>

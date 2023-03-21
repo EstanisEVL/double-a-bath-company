@@ -1,20 +1,20 @@
 import { useEffect, useRef, useState } from 'react';
+
+/*---- Imported icon ----*/
 import whatsappIcon from '../../assets/img/floating-whatsapp.png'
 
+/*---- Component ----*/
 const FloatingWhatsappButton = () => {
   const fromRef = useRef();
   const [ isVisible, setIsVisible ] = useState(true);
-
   const onScrollEnd = () => {
     const bottom = Math.ceil(window.innerHeight + window.scrollY + 200) >= document.documentElement.scrollHeight;
-
     if(bottom) {
       setIsVisible(false);
     } else {
       setIsVisible(true);
     }
   };
-
   useEffect(() => {
     window.addEventListener('scroll', onScrollEnd, {
       passive: true
@@ -23,7 +23,6 @@ const FloatingWhatsappButton = () => {
       window.removeEventListener('scroll', onScrollEnd);
     };
   }, [])
-
 
   return(
     <a

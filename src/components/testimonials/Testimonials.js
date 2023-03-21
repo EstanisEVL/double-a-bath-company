@@ -4,6 +4,7 @@ import TestimonyList from './TestimonyList';
 /*---- Imported components ----*/
 import TestimonySlider from './TestimonySlider';
 
+/*---- Component ----*/
 const Testimonials = () => {
   return(
     <section className='testimonials-section--container'>

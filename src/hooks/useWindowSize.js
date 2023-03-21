@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
+/*---- Custom hook ----*/
 const useWindowSize = () => {
   const [ windowSize, setWindowSize ] = useState({
     width: undefined,
     height: undefined
   });
-
   useEffect(() => {
     if(typeof window !== 'undefined') {
       function handleResize() {

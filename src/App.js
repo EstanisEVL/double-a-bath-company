@@ -1,9 +1,9 @@
 import { BrowserRouter } from 'react-router-dom';
 
-// Imported components:
+/*---- Imported components ----*/
 import DrawerAppBar from './components/navBar/DrawerAppBar';
 import HeroSec from './components/hero/HeroSec';
-import LazyServices from './components/serviceSection/LazyServices';
+import LazyServices from './components/services/LazyServices';
 import LazyWork from './components/work/LazyWork';
 import LazyGallery from './components/gallery/LazyGallery';
 import LazyTestimonials from './components/testimonials/LazyTestimonials';
@@ -11,7 +11,7 @@ import LazyContact from './components/contact/LazyContact';
 import FloatingWhatsappButton from './components/floatingWhatsappButton/FloatingWhatsappButton';
 import Footer from './components/footer/Footer';
 
-// Imported styles:
+/*---- Imported styles ----*/
 import './styles/styles.scss';
 
 function App() {

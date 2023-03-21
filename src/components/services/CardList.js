@@ -1,9 +1,10 @@
-/*---- Svg imports ----*/
+/*---- Imported icons ----*/
 import cardIcon1 from '../../assets/svg/free-design-service.svg';
 import cardIcon2 from '../../assets/svg/quality-materials-and-details.svg';
 import cardIcon3 from '../../assets/svg/professional-installation.svg';
 import cardIcon4 from '../../assets/svg/long-term-warranties.svg';
 
+/*---- Array ----*/
 const CardList = [
   {
     id: 1,

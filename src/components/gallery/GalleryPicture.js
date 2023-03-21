@@ -1,7 +1,10 @@
 import { useState } from 'react';
+
+/*---- Imported components ----*/
 import Button from 'react-bootstrap/Button';
 import GalleryModal from './GalleryModal';
 
+/*---- Component ----*/
 const GalleryPicture = ({ picture }) => {
   const [ modalShow, setModalShow ] = useState(false);
 

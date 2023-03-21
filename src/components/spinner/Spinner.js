@@ -1,3 +1,4 @@
+/*---- Component ----*/
 const Spinner = () => {
   return(
     <div className='spinner-container'>

@@ -3,15 +3,17 @@ import { lazy, Suspense } from 'react';
 /*---- Imported hook ----*/
 import useNearScreen from '../../hooks/useNearScreen';
 
+/*---- Imported components ----*/
 import Spinner from '../spinner/Spinner';
 const Gallery = lazy(
   () => import('./Gallery')
 );
 
+/*---- Component ----*/
 const LazyGallery = () => {
   const { isNearScreen, fromRef } = useNearScreen({
     rootMargin: '-50px',
-    threshold: 0.5
+    threshold: 0.25
   })
 
   return(

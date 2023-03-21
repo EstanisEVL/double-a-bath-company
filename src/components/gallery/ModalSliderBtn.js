@@ -1,6 +1,8 @@
+/*---- Imported icons ----*/
 import prevArrow from '../../assets/svg/prev-arrow.svg';
 import nextArrow from '../../assets/svg/next-arrow.svg';
 
+/*---- Component ----*/
 const ModalSliderBtn = ({ moveSlide, direction }) => {
   return(
     <button

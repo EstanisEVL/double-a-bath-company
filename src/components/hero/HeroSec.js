@@ -1,8 +1,11 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+
+/*---- Imported components ----*/
 import { Button, Container } from "@mui/material";
 import { Box } from "@mui/system";
 
+/*---- Component ----*/
 const HeroSec = () => {
 	return (
 		<Box className="ImgHero">

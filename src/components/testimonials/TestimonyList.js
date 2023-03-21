@@ -1,4 +1,4 @@
-/*---- Import uuid: ----*/
+/*---- Uuidv4 ----*/
 import { v4 as uuidv4 } from 'uuid';
 
 /*---- Imported images ----*/
@@ -7,6 +7,7 @@ import testimonialImg2 from '../../assets/img/testimonial2-profile-pic.png';
 import testimonialImg3 from '../../assets/img/testimonial3-profile-pic.png';
 import testimonialImg4 from '../../assets/img/testimonial4-profile-pic.png';
 
+/*---- Array ----*/
 const TestimonyList = [
   {
     id: uuidv4(),

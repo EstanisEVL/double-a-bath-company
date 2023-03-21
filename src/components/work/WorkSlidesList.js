@@ -1,4 +1,4 @@
-/*---- Import uuid: ----*/
+/*---- Uuidv4 ----*/
 import { v4 as uuidv4 } from 'uuid';
 
 /*---- Imported images ----*/
@@ -11,6 +11,7 @@ import slide3AfterImg from '../../assets/img/work-slider-imgs/03_after.png';
 import slide4BeforeImg from '../../assets/img/work-slider-imgs/04_before.png';
 import slide4AfterImg from '../../assets/img/work-slider-imgs/04_after.png';
 
+/*---- Array ----*/
 const WorkSlidesList = [
   {
     id: uuidv4(),

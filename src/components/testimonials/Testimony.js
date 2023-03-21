@@ -1,7 +1,8 @@
-/*---- Imported icons ----*/
+/*---- Imported images ----*/
 import frontQuotations from '../../assets/img/front-quotations.png';
 import backQuotations from '../../assets/img/back-quotations.png';
 
+/*---- Component ----*/
 const Testimony = ({ slide }) => {
   return(
     <div className='testimony-container'>

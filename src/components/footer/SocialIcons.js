@@ -1,6 +1,5 @@
+/*---- Component ----*/
 const SocialIcons = ({ icons }) => {
-  // Enlazar a redes sociales:
-  
   return(
     <div className='footer--socials'>
       {

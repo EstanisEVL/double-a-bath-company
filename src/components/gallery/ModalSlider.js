@@ -1,17 +1,15 @@
 import { useState } from "react";
+
+/*---- Imported components ----*/
 import ModalSliderBtn from "./ModalSliderBtn";
 import ModalSlide from "./ModalSlide";
 
+/*---- Component ----*/
 const ModalSlider = ({ slides }) => {
-    // Variables y estados:
     const [ slideIndex, setSlideIndex ] = useState(0);
     const quantity = slides?.length;
-  
-    // Return prematuro si no se le pasa un array al slider o si el array está vacío:
     if(!Array.isArray(slides) || quantity === 1)
       return;
-  
-    // Funciones:
     const nextSlide = () => {
       setSlideIndex(slideIndex === quantity - 1 ? 0 : slideIndex + 1);
     };

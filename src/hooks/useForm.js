@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-/*---- Sweet Alert ----*/
+/*---- Imported resources ----*/
 import Swal from 'sweetalert2';
 
-export const useForm = ( initialForm, formValidations ) => {
+/*---- Custom hook ----*/
+const useForm = ( initialForm, formValidations ) => {
   const [ form, setForm ] = useState(initialForm);
   const [ errors, setErrors ] = useState({});
-
   const showAlert = () => {
     Swal.fire({
       position: 'center',
@@ -16,7 +16,6 @@ export const useForm = ( initialForm, formValidations ) => {
       timer: 3000
     })
   }
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({
@@ -37,7 +36,6 @@ export const useForm = ( initialForm, formValidations ) => {
       return;
     };
   };
-
   return {
     form,
     errors,
@@ -45,3 +43,5 @@ export const useForm = ( initialForm, formValidations ) => {
     handleSubmit
   };
 };
+
+export default useForm;

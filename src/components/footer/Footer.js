@@ -1,11 +1,11 @@
 import { HashLink as Link } from "react-router-hash-link";
 
-/*---- Imported assets: ----*/
+/*---- Imported logo and icons ----*/
 import logo from '../../assets/img/footer-brand-logo.png';
-
 import SocialIcons from './SocialIcons';
 import SocialsIconList from './SocialsIconList';
 
+/*---- Component ----*/
 const Footer = () => {
   return(
     <footer className='footer-container' id='footer' >
@@ -24,7 +24,6 @@ const Footer = () => {
           <p>786-384-1030</p>
         </div>
       </div>
-
       <div className='footer--info-and-socials'>
         <div>
           <SocialIcons icons={ SocialsIconList }/>

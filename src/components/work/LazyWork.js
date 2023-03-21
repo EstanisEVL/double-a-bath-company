@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+
 /*---- Imported hooks ----*/
 import useNearScreen from '../../hooks/useNearScreen';
 
@@ -8,10 +9,11 @@ const Work = lazy(
   () => import('./Work')
 );
 
+/*---- Component ----*/
 const LazyWork = () => {
   const  { isNearScreen, fromRef }  = useNearScreen({ 
     rootMargin: '-50px',
-    threshold: 0.5 
+    threshold: 0.25 
   });
   
   return(

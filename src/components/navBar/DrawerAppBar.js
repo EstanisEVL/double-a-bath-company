@@ -1,18 +1,23 @@
 import React from 'react';
+import { HashLink as Link } from "react-router-hash-link";
+import PropTypes from 'prop-types';
+
+/*---- Imported components ----*/
 import { AppBar, Button, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import MenuIcon from '@mui/icons-material/Menu';
-import PropTypes from 'prop-types';
-import logo from '../../assets/img/logo.png';
-import { HashLink as Link } from "react-router-hash-link";
 
+/*---- Imported image ----*/
+import logo from '../../assets/img/logo.png';
+
+/*---- Variables ----*/
 const drawerWidth = 240;
 const navItems = [{Title:"HOME", Id:""},{Title:"OUR SERVICES", Id:"OURSERVICE"},{Title:"OUR WORK", Id:"OURWORK"},{Title:"TESTIMONIALS", Id:"TESTIMONIALS"}];
 
+/*---- Component ----*/
 function DrawerAppBar(props) {
 	const { window } = props;
 	const [ mobileOpen, setMobileOpen ] = React.useState(false);
-
 	const handleDrawerToggle = () => {
 		setMobileOpen((prevState) => !prevState);
 	};

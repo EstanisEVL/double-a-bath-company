@@ -1,4 +1,4 @@
-/*---- Import uuid: ----*/
+/*---- Uuidv4 ----*/
 import { v4 as uuidv4 } from 'uuid';
 
 /*---- Imported images ----*/
@@ -10,6 +10,7 @@ import img4 from '../../assets/img/bathroom-gallery-imgs/gallery-img-4.png'
 /*---- Imported arrays ----*/
 import { Modal1, Modal2, Modal3, Modal4 } from './ModalSliderImagesList'
 
+/*---- Array ----*/
 const GalleryPicsList = [
   {
     id: uuidv4(),

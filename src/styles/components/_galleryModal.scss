@@ -71,15 +71,11 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .modal-dialog-centered {
-    z-index: 999;
-  }
-  
   .modal-content {
     background-color: $bg-main;
     border-radius: 2rem;
     padding: 2rem;
-    max-height: 80vh;
+    // max-width: fit-content;
     .modal-header {
       border-bottom: none;
       min-height: 5rem;
@@ -125,5 +121,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal-content {
+    margin: 10rem;
   }
 }

@@ -1,5 +1,7 @@
+/*---- Imported components ----*/
 import GalleryPicture from "./GalleryPicture";
 
+/*---- Component ----*/
 const GalleryPics = ({ pictures }) => {
   return(
     <div
