@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 
 /*---- Imported components ----*/
@@ -12,43 +12,52 @@ import logo from '../../assets/img/logo.png';
 
 /*---- Variables ----*/
 const drawerWidth = 240;
-const navItems = [{Title:"HOME", Id:""},{Title:"OUR SERVICES", Id:"OURSERVICE"},{Title:"OUR WORK", Id:"OURWORK"},{Title:"TESTIMONIALS", Id:"TESTIMONIALS"}];
+const navItems = [
+	{ Title: 'HOME', Id: '' },
+	{ Title: 'OUR SERVICES', Id: 'OURSERVICE' },
+	{ Title: 'OUR WORK', Id: 'OURWORK' },
+	{ Title: 'TESTIMONIALS', Id: 'TESTIMONIALS' },
+];
 
 /*---- Component ----*/
 function DrawerAppBar(props) {
 	const { window } = props;
-	const [ mobileOpen, setMobileOpen ] = React.useState(false);
+	const [mobileOpen, setMobileOpen] = React.useState(false);
 	const handleDrawerToggle = () => {
 		setMobileOpen((prevState) => !prevState);
 	};
 
 	const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Box className='navBar'>
-        <Link to={'#'} smooth>
-          <img src={logo} alt='Logo DoubleA' className='logo-drawer'/>
-        </Link>
-      </Box>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={ item.Title } disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText>
-                <Link to={`#${ item.Id }`} smooth sx={{ textDecoration: 'none', color: '#000' }} className='mobile--nav-link' >{item.Title}</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-        ))}
-        <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: 'center' }}>
-            <ListItemText>
-              <Link to={'#FREECONSULTATION'} smooth sx={{ textDecoration: 'none', color: '#1969B3' }} className='mobile-nav-link--btn' >FREE CONSULTATION</Link>
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
+		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+			<Box className='navBar'>
+				<Link to={'#'} smooth>
+					<img src={logo} alt='Logo DoubleA' className='logo-drawer' />
+				</Link>
+			</Box>
+			<Divider />
+			<List>
+				{navItems.map((item) => (
+					<ListItem key={item.Title} disablePadding>
+						<ListItemButton sx={{ textAlign: 'center' }}>
+							<ListItemText>
+								<Link to={`#${item.Id}`} smooth sx={{ textDecoration: 'none', color: '#000' }} className='mobile--nav-link'>
+									{item.Title}
+								</Link>
+							</ListItemText>
+						</ListItemButton>
+					</ListItem>
+				))}
+				<ListItem disablePadding>
+					<ListItemButton sx={{ textAlign: 'center' }}>
+						<ListItemText>
+							<Link to={'#FREECONSULTATION'} smooth sx={{ textDecoration: 'none', color: '#1969B3' }} className='mobile-nav-link--btn'>
+								FREE CONSULTATION
+							</Link>
+						</ListItemText>
+					</ListItemButton>
+				</ListItem>
+			</List>
+		</Box>
 	);
 
 	const container = window !== undefined ? () => window().document.body : undefined;
@@ -61,9 +70,9 @@ function DrawerAppBar(props) {
 					<IconButton color='inherit' aria-label='open drawer' edge='start' onClick={handleDrawerToggle} sx={{ mr: 2, display: { sm: 'none' } }}>
 						<MenuIcon />
 					</IconButton>
-          <img src={logo} alt='Logo DoubleA' className='logo-mobile' />
+					<img src={logo} alt='Logo DoubleA' className='logo-mobile' />
 					<Typography variant='h6' component='div' sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
-            <Link to={'#'} smooth>
+						<Link to={'#'} smooth>
 							<img src={logo} className='logo' alt='Logo DoubleA' />
 						</Link>
 					</Typography>
@@ -106,16 +115,3 @@ DrawerAppBar.propTypes = {
 };
 
 export default DrawerAppBar;
-
-
-
-
-
-
-
-
-
-
-
-
-

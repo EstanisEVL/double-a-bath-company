@@ -22,7 +22,7 @@ function App() {
 				<HeroSec />
 				<LazyServices />
 				<LazyWork />
-        <LazyGallery />
+				<LazyGallery />
 				<LazyTestimonials />
 				<LazyContact />
 				<FloatingWhatsappButton />

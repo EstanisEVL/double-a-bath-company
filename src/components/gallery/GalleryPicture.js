@@ -6,26 +6,17 @@ import GalleryModal from './GalleryModal';
 
 /*---- Component ----*/
 const GalleryPicture = ({ picture }) => {
-  const [ modalShow, setModalShow ] = useState(false);
+	const [modalShow, setModalShow] = useState(false);
 
-  return(
-    <>
-      <Button
-      variant='primary'
-      onClick={() => setModalShow(true)}
-      className='gallery-picture--container'
-      >
-        <img src={ picture.img } alt={ picture.title }/>
-        <h3>{ picture.title }</h3>
-      </Button>
-      <GalleryModal
-        show={ modalShow }
-        onHide={ () => setModalShow(false) }
-        title={ picture.description }
-        gallery={ picture.pictures }
-      />
-    </>
-  );
+	return (
+		<>
+			<Button variant='primary' onClick={() => setModalShow(true)} className='gallery-picture--container'>
+				<img src={picture.img} alt={picture.title} />
+				<h3>{picture.title}</h3>
+			</Button>
+			<GalleryModal show={modalShow} onHide={() => setModalShow(false)} title={picture.description} gallery={picture.pictures} />
+		</>
+	);
 };
 
 export default GalleryPicture;

@@ -8,24 +8,24 @@ import whatsappIcon from '../../assets/img/whatsapp.png';
 
 /*---- Array ----*/
 const SocialsIconList = [
-  {
-    id: uuidv4(),
-    png: facebookIcon,
-    title: 'facebook',
-    url: 'https://www.facebook.com/A.ABathcompany?mibetextid=LQQJ4d'
-  },
-  {
-    id: uuidv4(),
-    png: instagramIcon,
-    title: 'instagram',
-    url: 'https://www.instagram.com/doubleabathcompany/'
-  },
-  {
-    id: uuidv4(),
-    png: whatsappIcon,
-    title: 'whatsapp',
-    url: 'https://api.whatsapp.com/send?phone=17863841030'
-  }
+	{
+		id: uuidv4(),
+		png: facebookIcon,
+		title: 'facebook',
+		url: 'https://www.facebook.com/A.ABathcompany?mibetextid=LQQJ4d',
+	},
+	{
+		id: uuidv4(),
+		png: instagramIcon,
+		title: 'instagram',
+		url: 'https://www.instagram.com/doubleabathcompany/',
+	},
+	{
+		id: uuidv4(),
+		png: whatsappIcon,
+		title: 'whatsapp',
+		url: 'https://api.whatsapp.com/send?phone=17863841030',
+	},
 ];
 
 export default SocialsIconList;

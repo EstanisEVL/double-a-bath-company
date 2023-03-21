@@ -13,42 +13,42 @@ import slide4AfterImg from '../../assets/img/work-slider-imgs/04_after.png';
 
 /*---- Array ----*/
 const WorkSlidesList = [
-  {
-    id: uuidv4(),
-    beforeTitle: 'Before',
-    afterTitle: 'After',
-    beforeAlt: 'Before work was done',
-    afterAlt: 'After work was done',
-    beforeImg: slide1BeforeImg,
-    afterImg: slide1AfterImg
-  },
-  {
-    id: uuidv4(),
-    beforeTitle: 'Before',
-    afterTitle: 'After',
-    beforeAlt: 'Before work was done',
-    afterAlt: 'After work was done',
-    beforeImg: slide2BeforeImg,
-    afterImg: slide2AfterImg
-  },
-  {
-    id: uuidv4(),
-    beforeTitle: 'Before',
-    afterTitle: 'After',
-    beforeAlt: 'Before work was done',
-    afterAlt: 'After work was done',
-    beforeImg: slide3BeforeImg,
-    afterImg: slide3AfterImg
-  },
-  {
-    id: uuidv4(),
-    beforeTitle: 'Before',
-    afterTitle: 'After',
-    beforeAlt: 'Before work was done',
-    afterAlt: 'After work was done',
-    beforeImg: slide4BeforeImg,
-    afterImg: slide4AfterImg
-  },
+	{
+		id: uuidv4(),
+		beforeTitle: 'Before',
+		afterTitle: 'After',
+		beforeAlt: 'Before work was done',
+		afterAlt: 'After work was done',
+		beforeImg: slide1BeforeImg,
+		afterImg: slide1AfterImg,
+	},
+	{
+		id: uuidv4(),
+		beforeTitle: 'Before',
+		afterTitle: 'After',
+		beforeAlt: 'Before work was done',
+		afterAlt: 'After work was done',
+		beforeImg: slide2BeforeImg,
+		afterImg: slide2AfterImg,
+	},
+	{
+		id: uuidv4(),
+		beforeTitle: 'Before',
+		afterTitle: 'After',
+		beforeAlt: 'Before work was done',
+		afterAlt: 'After work was done',
+		beforeImg: slide3BeforeImg,
+		afterImg: slide3AfterImg,
+	},
+	{
+		id: uuidv4(),
+		beforeTitle: 'Before',
+		afterTitle: 'After',
+		beforeAlt: 'Before work was done',
+		afterAlt: 'After work was done',
+		beforeImg: slide4BeforeImg,
+		afterImg: slide4AfterImg,
+	},
 ];
 
 export default WorkSlidesList;
