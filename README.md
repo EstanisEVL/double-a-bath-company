@@ -22,9 +22,7 @@ We used the following technologies, tools and dependencies:
 ---
 ### Watch the website in action!
 
-<video src='./screenshots/demo.mp4' autoplay loop controls muted title='desktop-demo'>
-Sorry, your browser doesn't support HTML 5 video.
-</video>
+https://user-images.githubusercontent.com/79377689/228006570-8225792e-a93b-4c36-be08-7a01809c8d56.mp4
 
 ---
 #### Contributors:
@@ -43,14 +41,3 @@ Sorry, your browser doesn't support HTML 5 video.
 - Mobile version:
 
 <img src='./screenshots/mobile-screenshot-double-a-bath-company.png' alt='Mobile version'>
-
-
-<!-- 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
- -->
