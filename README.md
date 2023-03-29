@@ -1,4 +1,4 @@
-<img src='./src/assets/img/logo.png' style='background-color:#252525;' />
+<img src='./src/assets/img/logo-readme.png' />
 
 # Responsive website built with React Js
 
